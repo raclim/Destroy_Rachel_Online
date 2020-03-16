@@ -1,0 +1,320 @@
+html, a {
+  font-family: 'Fredoka One', cursive;
+  animation: animate 0.25s infinite;
+}
+#home {
+  background-color: white;
+  /* background-color: #fff5f5; */
+}
+#work {
+  background-color: white;
+}
+#social {
+  /* background-color: #e6e7ed; */
+  background-color: white;
+}
+/* mouse animation */
+@keyframes animate{
+  0%{cursor: url("Images/heart5.png"), auto;}
+  20%{cursor: url("Images/heart6.png"), auto;}
+  40%{cursor: url("Images/heart7.png"), auto;}
+  60%{cursor: url("Images/heart8.png"), auto;}
+  80%{cursor: url("Images/heart7.png"), auto;}
+  100%{cursor: url("Images/heart6.png"), auto;}
+}
+
+/* particles stuff */
+.particles {
+	position: relative;
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.particles-canvas {
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+}
+
+.particles-wrapper {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	will-change: transform;
+}
+
+/* battery */
+#batteryStuff {
+  left: 50px;
+  float:left;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+.battery {
+  width: 60px;
+  height: 25px;
+  border: solid blue 3px;
+  border-radius: 10px;
+  box-shadow: 5px 4px yellow;
+  background-color: white;
+}
+.Blabel {
+  color:blue;
+}
+.battery-work {
+  width: 120px;
+  height: 25px;
+  border: solid black 3px;
+  border-radius: 10px;
+  box-shadow: 5px 4px gray;
+  color: black;
+  background-color: white;
+}
+.WBlabel {
+  color:black;
+}
+.battery-social {
+  width: 120px;
+  height: 50px;
+  border: solid lightblue 3px;
+  border-radius: 10px;
+  box-shadow: 5px 4px blue;
+  color: blue;
+  background-color: white;
+}
+.SBlabel {
+  color:blue;
+}
+
+#progress {
+  color: blue;
+}
+
+/* index */
+#title {
+  color: blue;
+  font-size: 32px;
+  border: 2px solid pink;
+  padding: 3px 20px;
+  box-shadow: 7px 7px 1px yellow;
+  border-radius: 5px;
+  position: relative;
+  background-color: white;
+  /* -webkit-text-stroke: 1px pink; */
+}
+
+.segment {
+  width: 0px;
+  height: 25px;
+  background-color: lime;
+  float: left;
+  border-radius: 5px;
+}
+
+.navlink {
+  color: purple;
+  background-color: pink;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.nav-button {
+  border: 1.5px solid yellow;
+  background-color: pink;
+  padding: 5px;
+  margin: 10px 10px;
+  box-shadow: 5px 4px blue;
+  border-radius: 5px;
+}
+
+.nav-button:hover, .navlink:hover, #title:hover{
+  background-color: yellow;
+}
+
+.nav-container, .body-container, .social-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.nav-container {
+  width: 50%;
+  margin: 5% 25%;
+  flex-direction: column;
+}
+
+.body-container, .social-container {
+  margin: 60px 10px;
+  margin-left:25%;
+}
+.body-element, .resume-element, .social-element {
+  padding: 10px 40px;
+}
+
+.body-element {
+  margin: 0px 10px;
+  width: 17%;
+  color: blue;
+  border: 2px solid pink;
+  background-image: linear-gradient(white,white,lightyellow);
+  box-shadow: 7px 7px 1px blue;
+  border-radius: 15px;
+}
+#description {
+  width: 400px;
+  margin-left: 17px;
+  color: blue;
+  border: 2px solid pink;
+  background-color: pink;
+  /* background-image: linear-gradient(white,white,lightyellow); */
+  box-shadow: 7px 7px 1px blue;
+  border-radius: 15px;
+}
+
+#profileimg{
+  margin: 20px 10px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px orange;
+  background-color: lightblue;
+}
+
+.image {
+  margin: 20px 10px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px orange;
+  background-color: lightblue;
+}
+
+/* resume */
+#resumetitle {
+  color: black;
+  font-size: 32px;
+  border: 2px solid black;
+  padding: 3px 20px;
+  box-shadow: 7px 7px 1px darkgray;
+  border-radius: 5px;
+}
+
+.navlink-work {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.resnav-button {
+  border: 1.5px solid black;
+  background-color: white;
+  padding: 5px;
+  margin: 10px 10px;
+  box-shadow: 5px 4px darkgray;
+  border-radius: 5px;
+}
+
+.resnav-button:hover, .navlink-work:hover{
+  background-color: black;
+  color: white;
+}
+.resumeContain {
+  display:flex;
+}
+
+#resumeimg {
+  border: 4px outset lightgrey;
+  border-radius: 2px;
+}
+
+#resumePicContain {
+  margin: 60px 0px 0px 150px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5%;
+}
+.resume-element {
+  margin: 10px;
+  width: 60%;
+  box-shadow: 5px 4px 5px gray;
+  border: 3px inset lightgray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.resume-text {
+  margin: 10px 40px;
+  padding: 5px;
+  width: 190px;
+  box-shadow: 5px 4px 5px gray;
+  border: 3px inset lightgray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+#innerRes1:hover, #innerRes2:hover, #innerRes3:hover, #innerRes4:hover {
+  background-color: darkgray;
+}
+
+.titles {
+  font-size: 20px;
+}
+.date {
+  font-style: italic;
+}
+
+/* social */
+.socialImg {
+  border: 3px dotted lightblue;
+  box-shadow: 6px 7px #76bdd5;
+  border-radius: 2px;
+}
+#socialtitle {
+  color: blue;
+  font-size: 32px;
+  border: 2px solid lightblue;
+  padding: 3px 20px;
+  box-shadow: 7px 7px 1px darkblue;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.navlink-social {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.socnav-button {
+  border: 1.5px solid lightblue;
+  background-color: white;
+  padding: 5px;
+  margin: 10px 10px;
+  box-shadow: 5px 4px darkblue;
+  border-radius: 5px;
+}
+
+.socnav-button:hover, .navlink-social:hover{
+  background-color: blue;
+  color: white;
+}
+
+.social-text {
+  margin: 0px 30px;
+  padding: 5px;
+  width: 250px;
+  color: blue;
+  border: 2px solid lightblue;
+  box-shadow: 7px 7px 1px blue;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#social1, #social2, #social3, #social4, #social5, #social6,
+ #social7, #social8, #social9, #social10 {
+  background-color: white;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html id="social">
+  <div id="batteryStuff" onMouseOver='disappear("batteryStuff")'>
+    <div id="battery" class="battery-social">
+    </div>
+    <p class="SBlabel">My Privacy: </p>
+    <p id ="batteryLabel" class="SBlabel">0</p>
+    <div id="progress"></div>
+  </div>
+  <header>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alata|Aldrich|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <nav>
+      <div class="nav-container">
+        <div class="nav-title">
+          <h1 id="socialtitle" onMouseOver='boom("socialtitle",4); zoomDown("nav-box")'>Rachel@Social</h1>
+        </div>
+        <div class="nav-links" id="nav-box">
+          <button class="socnav-button"><a class="navlink-social" href="index.html">Home</a></button>
+          <button class="socnav-button"><a class="navlink-social" href="work.html">Work</a></button>
+          <button class="socnav-button"><a class="navlink-social" href="social.html">Social</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="social-container" id="socialBox">
+      <div class="social-element" id="so1">
+        <img class="socialImg" id='social1' src="images/social1.jpg"
+        alt="Rachel and her roommate trying to get a sweater over her head." width="200" onMouseOver='boom("so1",4); createSocialDiv("This was a good memory.", "socialBox"); zoomUp("so4",1.5)'>
+        <p>Stuck</p>
+      </div>
+      <div class="social-element" id="so2">
+        <img class="socialImg" id='social2' src="images/social2.jpg"
+        alt="Rachel jumping in the air with her roommate." width="200" onMouseOver='boom("so2",4); createSocialDiv("She was the only person I knew who wanted jumping poses. We took this eight times.", "socialBox"); zoomUp("so5",1.5)'>
+        <p>Jump!</p>
+      </div>
+      <div class="social-element" id="so3">
+        <img class="socialImg" id='social3' src="images/social3.jpg"
+        alt="Rachel in the sand with a friend posed behind her with an umbrella." width="200" onMouseOver='boom("so3",4); createSocialDiv("I felt fat the entire time so I spent it in the sand.", "socialBox"); zoomUp("so6",1.5)'>
+        <p>Vroom</p>
+      </div>
+      <div class="social-element" id="so4">
+        <img class="socialImg" id='social4' src="images/social4.jpg"
+        alt="Group of people posing in front of a dojo." width="200" onMouseOver='boom("so4",4); createSocialDiv("That place gave my anxiety. I also sprained my toe that day.", "socialBox"); zoomUp("so7",3)'>
+        <p>Congrats passing</p>
+      </div>
+      <div class="social-element" id="so5">
+        <img class="socialImg" id='social5' src="images/social5.jpg"
+        alt="Rachel and her ex-boyfriend showing off their winning medals." width="200" onMouseOver='boom("so5",4); createSocialDiv("We dont date anymore.", "socialBox"); zoomUp("so8",3.5)'>
+        <p>Matching couple medals</p>
+      </div>
+      <div class="social-element" id="so6">
+        <img class="socialImg" id='social6' src="images/social6.jpg"
+        alt="Rachel and her teammates posing with their trophies." width="200" onMouseOver='boom("so6",4); createSocialDiv("I was so proud and RELIEVED!", "socialBox"); zoomUp("so9",3.5)'>
+        <p>First place at Cornell.</p>
+      </div>
+      <div class="social-element" id="so7">
+        <img class="socialImg" id='social7' src="images/social7.jpg"
+        alt="Rachel and her teammates celebrating first place." width="200" onMouseOver='boom("so7",4); createSocialDiv("y the fuk do i have so many pics with my ex", "socialBox"); zoomUp("so10",3.5)'>
+        <p>A Team first place at COlumbia!</p>
+      </div>
+      <div class="social-element" id="so8">
+        <img class="socialImg" id='social8' src="images/social8.jpg"
+        alt="Rachel and her teammates posing with their medals." width="200" onMouseOver='boom("so8",4); createSocialDiv("All of us are on bad terms now.", "socialBox")'>
+        <p>Seniors!</p>
+      </div>
+      <div class="social-element" id="so9">
+        <img class="socialImg" id='social9' src="images/social9.jpg"
+        alt="Rachel and her boyfriend posing with their medals." width="200" onMouseOver='boom("so9",4); createSocialDiv("yea we rly dont date this is making me sad u c y i dont lik fb", "socialBox")'>
+        <p>Classic couple photo</p>
+      </div>
+      <div class="social-element" id="so10">
+        <img class="socialImg" id='social10' src="images/social10.png"
+        alt="Rachel and her friend smiling wearing birthday crowns in front of cakes." width="200" onMouseOver='boom("so10",4); createSocialDiv("Hue I dont see him anymore either.", "socialBox")'>
+        <p>Happy Birthday!</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+  </body>
+  <!-- <footer>
+    <p>Rachel A Lim</p>
+  </footer> -->
+</html>

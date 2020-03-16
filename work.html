@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html id="work">
+  <div id="batteryStuff" onMouseOver='disappear("batteryStuff")'>
+    <div id="battery" class="battery-work">
+    </div>
+    <p class="WBLabel">My Relief: </p>
+    <p id ="batteryLabel" class="WBLabel">0</p>
+    <div id="progress"></div>
+  </div>
+  <header>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alata|Aldrich|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <nav>
+      <div class="nav-container" id="nav-container">
+        <div class="nav-title">
+          <h1 id="resumetitle" onMouseOver='boom("resumetitle", 3); zoomDown("nav-box")'>Rachel@Work</h1>
+        </div>
+        <div class="nav-links" id="nav-box">
+          <button class="resnav-button"><a class="navlink-work" href="index.html">Home</a></button>
+          <button class="resnav-button"><a class="navlink-work" href="work.html">Work</a></button>
+          <button class="resnav-button"><a class="navlink-work" href="social.html">Social</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div id="resumeBox">
+      <div class="resumeContain">
+        <div id="resumePicContain">
+          <img id='resumeimg' src="Images/resume.jpg" width="150" onMouseOver='createWorkDiv("fuck linkedin propics", "resumeBox"); boom("resumeimg",3)'>
+        </div>
+        <div class="resume-container" id="resume-container">
+          <div class="resume-element" id="res1" onMouseOver='boom("res1",3); zoomUp("res2", 2.3); createWorkDiv("Am I really a masters student?? Did I do shit in school???", "resumeBox")'>
+            <h2>Education</h2>
+            <p class="titles">New York University Tisch School of the Arts</p>
+            <p>M.P.S from Interactive Telecommuncations Program</p>
+            <p class="date">Class of 2020</p>
+            <p class= "titles">New York University College of Arts and Science</p>
+            <p>B.A in Art History</p>
+            <p class ="date">Class of 2018</p>
+          </div>
+          <div class="resume-element" id="res2" onMouseOver='boom("res2",3); zoomUp("res3", 3.7); createWorkDiv("In reality I did nothing. (4 real tho except the ice cream job. That was A LOT.)", "resumeBox")'>
+            <h2>Experience</h2>
+            <p class="titles">NYU Gallatin Digital Accessibility Assistant</p>
+            <p>Audited and remediated faculty websites for accessibility in line
+              with WCAG 2.0 standards Generated instructional guides for creating
+              accessible digital assets with InDesign Workshopped with students and
+              faculty on accessibility standards relevant to their work</p>
+            <p class="date">September 2018 - Present</p>
+            <p class="titles">Guggenheim Museum Interactive Intern</p>
+            <p>Analyzed with Google Analytics most effective app functions and
+              drafted data reports Planned optimal beacon placement according to
+              artwork, exhibition design, and architecture Performed quality
+              assurance testing and textual edits for app before launching
+              each update</p>
+            <p class="date">September 2017 - December 2017</p>
+            <p class="titles">Matcha Love Ice Cream Girl</p>
+            <p>Gave people ice cream with the right amount of matcha</p>
+            <p class="date">June 2017 - January 2018</p>
+          </div>
+          <div class="resume-element" id="res3" onMouseOver='boom("res3",3); zoomUp("res4", 4.8); createWorkDiv("I hate this but I keep it because I feel like it shows...leadership?? idk???", "resumeBox")'>
+            <h2>Extra</h2>
+            <p class="titles">NYU Team Captain</p>
+            <p>Managed weekly practices and tournament preparation for national winning club</p>
+            <p class="date">September 2017-May 2018</p>
+          </div>
+          <div class="resume-element" id="res4" onMouseOver='boom("res4",3); createWorkDiv("These dont define me but also, like CAN I do them? lmfao", "resumeBox")'>
+            <h2>Skills</h2>
+            <p>Adobe Creative Suite</p>
+            <p> Web Programming (HTML/CSS, Javascript, React)</p>
+            <p>Arduino/Physical Computing</p>
+            <p>Hard/Soft Fabrication</p>
+            <p>Conversational Korean</p>
+            <p>Being a 23 yr old sHitTer</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

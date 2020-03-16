@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html id="home">
+  <div id="batteryStuff" onMouseOver='disappear("batteryStuff"); createCatDiv("We really dont need anything here.", "body-box")'>
+    <div id="battery" class="battery">
+    </div>
+    <p class="Blabel"> My Happiness: </p>
+    <p id ="batteryLabel" class="Blabel">0</p>
+    <div id="progress"></div>
+  </div>
+  <header>
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alata|Aldrich|Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <nav>
+      <div class="nav-container" id="nav-thing">
+        <div class="nav-title">
+          <h1 id="title" onMouseOver='titleBoom("title");zoomDown("nav-box"); createCatDiv("Get rid of everything.", "body-box")'>
+            www.DESTROYRachelOnline.com
+          </h1>
+        </div>
+        <div class="nav-links" id="nav-box">
+          <button class="nav-button"><a class="navlink" href="index.html">Home</a></button>
+          <button class="nav-button"><a class="navlink" href="work.html">Work</a></button>
+          <button class="nav-button"><a class="navlink" href="social.html">Social</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div id="body-box">
+      <div class="body-container">
+        <img id='profileimg' src="https://i.kym-cdn.com/photos/images/original/001/367/597/8f8.jpg"
+        alt="Meme of sad cat crying and disintegrating" width="150" onMouseOver='boom("profileimg", 1); zoomRight("description"); createCatDiv("I dont feel so good Mr.Stark...", "body-box");'>
+        <div class="body-element" id="description" onMouseOver='boom("description", 2); createCatDiv("Thanks dude, I hate words too.", "body-box"); zoomLeft("profileimg")'>
+          <p>My name is Rachel. I have a resume and social media stuff on the internet. It's me but it's not me. Me doesn't want stuff anywhere.</p>
+          <p>Hovering over stuff will make them poof! </p>
+          <p>I want to get rid of them ASAP, so if you want to read stuff gotta swerve (probably left) fast.</p>
+          <p>If you missed stuff and ACTUALLY wanted to read about my life refresh the page.</p>
+          <p>Do it man.</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
